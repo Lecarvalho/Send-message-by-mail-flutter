@@ -7,15 +7,19 @@ class MessageController extends ChangeNotifier {
 
   MessageDAO _messageDAO = MessageDAO();
   MessageService _messageService = MessageService();
+  List<String> _messages;
+  List<String> get messages => _messages ?? List<String>();
+  bool get hasMessages => _messages != null && _messages.isNotEmpty;
 
-  void sendMessage(String message) async {
+  Future<void> sendMessage(String message) async {
     var deviceId = await DeviceId.getID;
     await _messageDAO.saveMessage(message, deviceId);
     await _messageService.sendMessage(message, deviceId);
+  }
+
+  Future<void> loadMessages() async {
+    _messages = await _messageDAO.getSavedMessages();
     notifyListeners();
   }
 
-  Future<List<String>> getMessages() async {
-    return await _messageDAO.getSavedMessages();
-  }
 }
