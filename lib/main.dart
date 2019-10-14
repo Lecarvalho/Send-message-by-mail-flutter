@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:send_message_by_mail/controller/message_controller.dart';
-import 'package:send_message_by_mail/repository/dbcontext.dart';
+import 'package:communication_feedback_flutter/controller/message_controller.dart';
+import 'package:communication_feedback_flutter/repository/dbcontext.dart';
 
 import 'contact.dart';
 
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Send message by mail',
+      title: 'Communication feedback flutter',
       theme: ThemeData(
         primaryColor: Colors.white,
       ),

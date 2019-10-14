@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:send_message_by_mail/controller/message_controller.dart';
-import 'package:send_message_by_mail/message_widget.dart';
+import 'package:communication_feedback_flutter/controller/message_controller.dart';
+import 'package:communication_feedback_flutter/message_widget.dart';
 
 import 'send_message_widget.dart';
 

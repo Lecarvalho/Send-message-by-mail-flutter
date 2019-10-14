@@ -1,4 +1,4 @@
-# send_message_by_mail
+# communication_feedback_flutter
 
 Form and implementation to send message by mail, using sqflite to save the messages locally, provider to state management, and mailer package.
 

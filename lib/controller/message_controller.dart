@@ -1,7 +1,7 @@
 import 'package:device_id/device_id.dart';
 import 'package:flutter/widgets.dart';
-import 'package:send_message_by_mail/repository/message_dao.dart';
-import 'package:send_message_by_mail/service/message_service.dart';
+import 'package:communication_feedback_flutter/repository/message_dao.dart';
+import 'package:communication_feedback_flutter/service/message_service.dart';
 
 class MessageController extends ChangeNotifier {
 

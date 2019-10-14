@@ -1,4 +1,4 @@
-import 'package:send_message_by_mail/repository/dbcontext.dart';
+import 'package:communication_feedback_flutter/repository/dbcontext.dart';
 
 class MessageDAO {
   DbContext _dbContext = DbContext();

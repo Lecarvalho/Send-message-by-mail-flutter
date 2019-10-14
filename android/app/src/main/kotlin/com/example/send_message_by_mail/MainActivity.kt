@@ -1,4 +1,4 @@
-package com.example.send_message_by_mail
+package com.example.communication_feedback_flutter
 
 import android.os.Bundle
 
